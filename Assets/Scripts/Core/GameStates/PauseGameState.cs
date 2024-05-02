@@ -27,6 +27,18 @@ namespace Core
             _menuScreen.OnSaveButtonClick += OnSaveButtonClick;
         }
 
+        public void Enter()
+        {
+            _menuScreen.Show();
+            Time.timeScale = 0;
+        }
+
+        public void Exit()
+        {
+            _menuScreen.Hide();
+            Time.timeScale = 1;
+        }
+        
         private void OnLoadButtonClick()
         {  
             _stateMachine.SwitchState<PlayGameState>();
@@ -44,18 +56,6 @@ namespace Core
             
             _stateMachine.SwitchState<PlayGameState>();
             _gameController.PlayGame(loadData:false, isResume:true);
-        }
-
-        public void Enter()
-        {
-            _menuScreen.Show();
-            Time.timeScale = 0;
-        }
-
-        public void Exit()
-        {
-            _menuScreen.Hide();
-            Time.timeScale = 1;
         }
     }
 }

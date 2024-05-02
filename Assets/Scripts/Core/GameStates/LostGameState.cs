@@ -23,12 +23,6 @@ namespace Core
             _gameLostScreen.OnReplayGameButtonClick += OnReplayGameButtonClick;
         }
 
-        private void OnReplayGameButtonClick()
-        {
-            _stateMachine.SwitchState<PlayGameState>();
-            _gameController.PlayGame();
-        }
-
         public void Enter()
         {
             _gameLostScreen.Show();
@@ -39,6 +33,12 @@ namespace Core
         {
             _gameLostScreen.Hide();
             Time.timeScale = 1;
+        }
+        
+        private void OnReplayGameButtonClick()
+        {
+            _stateMachine.SwitchState<PlayGameState>();
+            _gameController.PlayGame();
         }
     }
 }

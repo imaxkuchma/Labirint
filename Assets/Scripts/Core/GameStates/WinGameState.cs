@@ -23,12 +23,6 @@ namespace Core
             _gameWinScreen.OnReplayButtonClick+= OnReplayButtonClick;
         }
 
-        private void OnReplayButtonClick()
-        {
-            _stateMachine.SwitchState<PlayGameState>();
-            _gameController.PlayGame();
-        }
-
         public void Enter()
         {
             _gameWinScreen.Show();
@@ -39,6 +33,12 @@ namespace Core
         {
             _gameWinScreen.Hide();
             Time.timeScale = 1;
+        }
+        
+        private void OnReplayButtonClick()
+        {
+            _stateMachine.SwitchState<PlayGameState>();
+            _gameController.PlayGame();
         }
     }
 }

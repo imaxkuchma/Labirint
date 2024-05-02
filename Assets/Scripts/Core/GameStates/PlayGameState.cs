@@ -28,16 +28,6 @@ namespace Core
             _gameScreen.OnPauseButtonClick += OnPauseButtonClick;
         }
 
-        private void OnPlayerLost()
-        {
-            _stateMachine.SwitchState<LostGameState>();
-        }
-
-        private void OnPlayerWin()
-        {
-            _stateMachine.SwitchState<WinGameState>();
-        }
-
         public void Enter()
         {
             _gameScreen.Show();
@@ -51,6 +41,16 @@ namespace Core
         public void Exit()
         {
             _gameScreen.Hide();
+        }
+        
+        private void OnPlayerLost()
+        {
+            _stateMachine.SwitchState<LostGameState>();
+        }
+
+        private void OnPlayerWin()
+        {
+            _stateMachine.SwitchState<WinGameState>();
         }
 
         private void OnPauseButtonClick()
