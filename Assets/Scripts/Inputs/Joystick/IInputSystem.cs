@@ -1,8 +1,11 @@
 ﻿using System;
 using UnityEngine;
 
-public interface IInputSystem
+namespace Inputs.Joystick
 {
-    public event Action<bool> OnStickMove;
-    public event Action<Vector2> OnStickDirection;
+    public interface IInputSystem
+    {
+        public event Action<bool> OnStickMove;
+        public event Action<Vector2> OnStickDirection;
+    }
 }

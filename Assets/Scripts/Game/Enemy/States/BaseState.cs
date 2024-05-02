@@ -1,4 +1,6 @@
 ﻿
+using Game.Enemy;
+
 public abstract class BaseState<T>: IState
 {
     protected T _stateMachine { get; private set; }

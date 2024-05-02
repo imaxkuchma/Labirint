@@ -1,6 +1,9 @@
-﻿public interface IState
+﻿namespace Game.Enemy
 {
-    void Enter();
-    void Update();
-    void Exit();
+    public interface IState
+    {
+        void Enter();
+        void Update();
+        void Exit();
+    }
 }

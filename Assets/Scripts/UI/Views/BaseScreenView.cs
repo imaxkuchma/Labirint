@@ -1,28 +1,29 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-public abstract class BaseScreenView : MonoBehaviour, IView
+namespace UI.Views
 {
-    public abstract ScreenType Type { get; }
-
-    private void Awake()
+    public abstract class BaseScreenView : MonoBehaviour, IView
     {
-        OnAwake();
-    }
+        public abstract ScreenType Type { get; }
 
-    public void Hide()
-    {
-        gameObject.SetActive(false);
-    }
+        private void Awake()
+        {
+            OnAwake();
+        }
 
-    public void Show()
-    {
-        gameObject.SetActive(true);
-    }
+        public void Hide()
+        {
+            gameObject.SetActive(false);
+        }
 
-    protected virtual void OnAwake()
-    {
+        public void Show()
+        {
+            gameObject.SetActive(true);
+        }
 
+        protected virtual void OnAwake()
+        {
+
+        }
     }
 }

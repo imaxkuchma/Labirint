@@ -1,7 +1,10 @@
 ﻿using System;
 
-public interface IGameLostScreenView : IView
+namespace UI.Views
 {
-    event Action OnReplayGameButtonClick;
+    public interface IGameLostScreenView : IView
+    {
+        event Action OnReplayGameButtonClick;
+    }
 }
 

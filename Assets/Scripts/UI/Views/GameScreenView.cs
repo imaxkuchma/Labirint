@@ -1,40 +1,42 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-using TMPro;
-using UnityEngine.UI;
 using System;
+using Inputs.Joystick;
+using TMPro;
+using UnityEngine;
+using UnityEngine.UI;
 
-public class GameScreenView : BaseScreenView, IGameScreenView
+namespace UI.Views
 {
-    [SerializeField] private TextMeshProUGUI _attemptText;
-    [SerializeField] private TextMeshProUGUI _timeLeftText;
-    [SerializeField] private Button _pauseButton;
-    [SerializeField] private JoystickController _joystick;
-
-    public event Action OnPauseButtonClick;
-
-    public override ScreenType Type => ScreenType.GameScreen;
-    public IInputSystem Joystick => _joystick;
-
-    protected override void OnAwake()
+    public class GameScreenView : BaseScreenView, IGameScreenView
     {
-        _pauseButton.onClick.AddListener(() =>
+        [SerializeField] private TextMeshProUGUI _attemptText;
+        [SerializeField] private TextMeshProUGUI _timeLeftText;
+        [SerializeField] private Button _pauseButton;
+        [SerializeField] private JoystickController _joystick;
+
+        public event Action OnPauseButtonClick;
+
+        public override ScreenType Type => ScreenType.GameScreen;
+        public IInputSystem Joystick => _joystick;
+
+        protected override void OnAwake()
         {
-            OnPauseButtonClick?.Invoke();
-        });
-    }
+            _pauseButton.onClick.AddListener(() =>
+            {
+                OnPauseButtonClick?.Invoke();
+            });
+        }
 
-    public void SetNumberAttempts(int levelIndex)
-    {
-        _attemptText.text = $"Attempt: {levelIndex}";
-    }
+        public void SetNumberAttempts(int levelIndex)
+        {
+            _attemptText.text = $"Attempt: {levelIndex}";
+        }
 
-    public void SetTimeleft(int value)
-    {
-        TimeSpan result = TimeSpan.FromSeconds(value);
-        string fromTimeString = result.ToString("mm':'ss");
+        public void SetTimeleft(int value)
+        {
+            TimeSpan result = TimeSpan.FromSeconds(value);
+            string fromTimeString = result.ToString("mm':'ss");
 
-        _timeLeftText.text = fromTimeString;
+            _timeLeftText.text = fromTimeString;
+        }
     }
 }

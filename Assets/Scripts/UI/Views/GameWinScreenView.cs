@@ -2,19 +2,22 @@
 using UnityEngine;
 using UnityEngine.UI;
 
-public class GameWinScreenView : BaseScreenView, IGameWinScreenView
+namespace UI.Views
 {
-    [SerializeField] private Button _replayButtonButton;
-    public override ScreenType Type => ScreenType.GameWinScreen;
-
-    public event Action OnReplayButtonClick;
-
-    protected override void OnAwake()
+    public class GameWinScreenView : BaseScreenView, IGameWinScreenView
     {
-        _replayButtonButton.onClick.AddListener(()=>
+        [SerializeField] private Button _replayButtonButton;
+        public override ScreenType Type => ScreenType.GameWinScreen;
+
+        public event Action OnReplayButtonClick;
+
+        protected override void OnAwake()
         {
-            OnReplayButtonClick?.Invoke();
-        });
+            _replayButtonButton.onClick.AddListener(()=>
+            {
+                OnReplayButtonClick?.Invoke();
+            });
+        }
     }
 }
 

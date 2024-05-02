@@ -2,19 +2,22 @@
 using UnityEngine;
 using UnityEngine.UI;
 
-public class GameLostScreenView : BaseScreenView, IGameLostScreenView
+namespace UI.Views
 {
-    [SerializeField] private Button _repeatLevelButton;
-    public override ScreenType Type => ScreenType.GameLostScreen;
+    public class GameLostScreenView : BaseScreenView, IGameLostScreenView
+    {    
+        [SerializeField] private Button _repeatLevelButton;
+        public override ScreenType Type => ScreenType.GameLostScreen;
 
-    public event Action OnReplayGameButtonClick;
+        public event Action OnReplayGameButtonClick;
 
-    protected override void OnAwake()
-    {
-        _repeatLevelButton.onClick.AddListener(() => 
+        protected override void OnAwake()
         {
-            OnReplayGameButtonClick?.Invoke();
-        });
+            _repeatLevelButton.onClick.AddListener(() => 
+            {
+                OnReplayGameButtonClick?.Invoke();
+            });
+        }
     }
 }
 

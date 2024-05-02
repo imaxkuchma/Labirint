@@ -1,11 +1,14 @@
-
 using System;
+using Inputs.Joystick;
 
-public interface IGameScreenView : IView
+namespace UI.Views
 {
-    void SetNumberAttempts(int levelIndex);
-    void SetTimeleft(int value);   
-    IInputSystem Joystick { get; }
+    public interface IGameScreenView : IView
+    {
+        void SetNumberAttempts(int levelIndex);
+        void SetTimeleft(int value);   
+        IInputSystem Joystick { get; }
 
-    event Action OnPauseButtonClick;
+        event Action OnPauseButtonClick;
+    }
 }

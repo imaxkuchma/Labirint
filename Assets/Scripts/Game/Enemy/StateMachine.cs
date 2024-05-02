@@ -1,12 +1,13 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Game.Enemy;
 using UnityEngine;
 
 public class StateMachine<T> : IStateMachine<T>
 {
     private IState _currentState;
-    private Dictionary<Type, IState> _states;
+    private readonly Dictionary<Type, IState> _states;
 
     public IState CurrentState => _currentState;
 

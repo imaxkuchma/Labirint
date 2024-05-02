@@ -1,27 +1,31 @@
-using System.Collections;
+using Core.FMS;
+using Game;
 using UnityEngine;
 
-public class App : MonoBehaviour
+namespace Core
 {
-    [SerializeField] private AppContext _appContext;
-
-    private IGameStateMachine _gameStateMachine;
-
-    private void Awake()
+    public class App : MonoBehaviour
     {
-        _appContext.Construct();
+        [SerializeField] private AppContext _appContext;
 
-        var gameController = new GameController(_appContext);
+        private IGameStateMachine _gameStateMachine;
 
-        _gameStateMachine = new GameStateMachine();
-        _gameStateMachine.AddState<PlayGameState>(new PlayGameState(_gameStateMachine, _appContext, gameController));
-        _gameStateMachine.AddState<PauseGameState>(new PauseGameState(_gameStateMachine, _appContext, gameController));
-        _gameStateMachine.AddState<LostGameState>(new LostGameState(_gameStateMachine, _appContext, gameController));
-        _gameStateMachine.AddState<WinGameState>(new WinGameState(_gameStateMachine, _appContext, gameController));
-    }
+        private void Awake()
+        {
+            _appContext.Construct();
 
-    public void Start()
-    {
-        _gameStateMachine.SwitchState<PlayGameState>();
+            var gameController = new GameController(_appContext);
+
+            _gameStateMachine = new GameStateMachine();
+            _gameStateMachine.AddState<PlayGameState>(new PlayGameState(_gameStateMachine, _appContext, gameController));
+            _gameStateMachine.AddState<PauseGameState>(new PauseGameState(_gameStateMachine, _appContext, gameController));
+            _gameStateMachine.AddState<LostGameState>(new LostGameState(_gameStateMachine, _appContext, gameController));
+            _gameStateMachine.AddState<WinGameState>(new WinGameState(_gameStateMachine, _appContext, gameController));
+        }
+
+        public void Start()
+        {
+            _gameStateMachine.SwitchState<PlayGameState>();
+        }
     }
 }

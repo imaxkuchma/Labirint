@@ -1,5 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
+using UI;
+using UI.Views;
 using UnityEngine;
 
 public interface IUImanager

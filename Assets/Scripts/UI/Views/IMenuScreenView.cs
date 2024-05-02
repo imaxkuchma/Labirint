@@ -1,8 +1,11 @@
 
 using System;
 
-public interface IMenuScreenView : IView
+namespace UI.Views
 {
-    event Action OnLoadButtonClick;
-    event Action OnSaveButtonClick;
+    public interface IMenuScreenView : IView
+    {
+        event Action OnLoadButtonClick;
+        event Action OnSaveButtonClick;
+    }
 }

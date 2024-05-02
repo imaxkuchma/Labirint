@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="50d446de-656b-49de-bfab-b634bc188567" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Core/FMS.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Core/FMS/GameStateMachine.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Core/FMS/IGameState.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Core/GameStates.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Core/GameStates/LostGameState.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Core/GameStates/PauseGameState.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Core/GameStates/PlayGameState.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Core/GameStates/WinGameState.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Data/ILevelData.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Data/LevelData.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Data/SerializedVector3.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Data/SerializedVector3.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Game/IGameController.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Game/IGameController.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Game/Level/LevelController.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Game/TimeCounter.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Game/TimeCounter.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/NavMeshComponents/Editor.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/NavMeshComponents/Editor.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/NavMeshComponents/Editor/NavMeshAssetManager.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/NavMeshComponents/Editor/NavMeshAssetManager.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/NavMeshComponents/Editor/NavMeshComponentsEditor.asmdef.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/NavMeshComponents/Editor/NavMeshComponentsEditor.asmdef.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/NavMeshComponents/Editor/NavMeshComponentsGUIUtility.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/NavMeshComponents/Editor/NavMeshComponentsGUIUtility.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/NavMeshComponents/Editor/NavMeshLinkEditor.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/NavMeshComponents/Editor/NavMeshLinkEditor.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/NavMeshComponents/Editor/NavMeshModifierEditor.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/NavMeshComponents/Editor/NavMeshModifierEditor.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/NavMeshComponents/Editor/NavMeshModifierVolumeEditor.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/NavMeshComponents/Editor/NavMeshModifierVolumeEditor.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/NavMeshComponents/Editor/NavMeshSurfaceEditor.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/NavMeshComponents/Editor/NavMeshSurfaceEditor.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/NavMeshComponents/Scripts.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/NavMeshComponents/Scripts.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/NavMeshComponents/Scripts/NavMeshComponents.asmdef.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/NavMeshComponents/Scripts/NavMeshComponents.asmdef.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/NavMeshComponents/Scripts/NavMeshLink.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/NavMeshComponents/Scripts/NavMeshLink.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/NavMeshComponents/Scripts/NavMeshModifier.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/NavMeshComponents/Scripts/NavMeshModifier.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/NavMeshComponents/Scripts/NavMeshModifierVolume.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/NavMeshComponents/Scripts/NavMeshModifierVolume.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/NavMeshComponents/Scripts/NavMeshSurface.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/NavMeshComponents/Scripts/NavMeshSurface.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Game/GameLevel.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Game/GameLevel.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Game/NavMesh-Level1.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Game/NavMesh-Level1.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Game/PlayerFinishPoint.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Game/PlayerFinishPoint.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Game/PlayerSpawnPoint.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Game/PlayerSpawnPoint.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/UI/UIManager.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/UI/UIManager.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GameScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GameScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Core/App.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Core/App.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Core/AppContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Core/AppContext.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Core/GameStateMachine.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Core/GameStateMachine.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Core/FMS/GameStateMachine.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Core/IAppContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Core/IAppContext.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Core/IGameState.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Core/IGameState.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Core/FMS/IGameState.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Core/IGameStateMachine.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Core/FMS/IGameStateMachine.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Core/IGameStateMachine.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Core/FMS/IGameStateMachine.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Core/LostGameState.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Core/LostGameState.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Core/GameStates/LostGameState.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Core/PauseGameState.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Core/PauseGameState.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Core/GameStates/PauseGameState.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Core/PlayGameState.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Core/PlayGameState.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Core/GameStates/PlayGameState.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Core/TimeCounter.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Core/TimeCounter.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Core/WinGameState.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Core/WinGameState.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Core/GameStates/WinGameState.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Data/PlayerData.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Data/PlayerData.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/EnemySpawner.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/EnemySpawner.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Events.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Events.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/CameraController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Game/CameraController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/Enemy/EnemyController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Game/Enemy/EnemyController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/Enemy/IState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Game/Enemy/IState.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/Enemy/IStateMachine.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Game/Enemy/IStateMachine.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/Enemy/StateMachine.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Game/Enemy/StateMachine.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/Enemy/States/BaseState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Game/Enemy/States/BaseState.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/Enemy/States/EnemyIdleState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Game/Enemy/States/EnemyIdleState.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/Enemy/States/EnemyMoveState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Game/Enemy/States/EnemyMoveState.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/Level/Level.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/Level/Level.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/Player/PlayerController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Game/Player/PlayerController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Game/GameController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameController.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Game/GameController.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Inputs/Joystick/IInputSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Inputs/Joystick/IInputSystem.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Inputs/Joystick/JoystickController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Inputs/Joystick/JoystickController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/ScreenType.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/ScreenType.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/UIManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/UIManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/Views/BaseScreenView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/Views/BaseScreenView.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/Views/GameLostScreenView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/Views/GameLostScreenView.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/Views/GameScreenView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/Views/GameScreenView.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/Views/GameWinScreenView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/Views/GameWinScreenView.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/Views/IGameLostScreenView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/Views/IGameLostScreenView.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/Views/IGameScreenView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/Views/IGameScreenView.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/Views/IGameWinScreenView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/Views/IGameWinScreenView.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/Views/IMenuScreenView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/Views/IMenuScreenView.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/Views/IView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/Views/IView.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/Views/MenuScreenView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/Views/MenuScreenView.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/Packages/com.unity.testtools.codecoverage/Settings.json" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/Packages/com.unity.testtools.codecoverage/Settings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/boot.config" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Data/ILevelData.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Game/Level/LevelController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Data/LevelData.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/Assets/Scripts/Game/Enemy/IStateMachine.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Game/Enemy/StateMachine.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/TimeCounter.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Core/GameStateMachine.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Core/IAppContext.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Core/IGameState.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Game/Enemy/IState.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Game/CameraController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Inputs/Joystick/IInputSystem.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Data/PlayerData.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/GameController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Data/IPlayerData.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Core/PauseGameState.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Core/LostGameState.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Core/PlayGameState.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Core/WinGameState.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UI/Views/GameScreenView.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UI/Views/BaseScreenView.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UI/Views/IGameLostScreenView.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UI/Views/GameLostScreenView.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UI/Views/GameWinScreenView.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UI/Views/IGameScreenView.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UI/Views/IGameWinScreenView.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UI/Views/IMenuScreenView.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UI/Views/IView.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UI/Views/MenuScreenView.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UI/ScreenType.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Core/FMS/IGameState.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Core/FMS/GameStateMachine.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Core/FMS/IGameStateMachine.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Core/App.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Inputs/Joystick/JoystickController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Game/Player/PlayerController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Core/AppContext.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Game/Level/Level.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Game/Enemy/EnemyController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Game/IGameController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Core/GameStates/PauseGameState.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Data/LevelData.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Game/TimeCounter.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Game/GameController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Game/Level/LevelController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Data/ILevelData.cs" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="2fvBUDPXt1cmsKp9KJJATj2MSGl" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DebuggerViewTab_PTCS_FirstProportionKey" value="0.34994584" />
+    <property name="DebuggerViewTab_PTCS_LastProportionKey" value="0.30010834" />
+    <property name="Discover.Launch.Via.Unity" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.C#" />
+  </component>
+  <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
+    <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+      <option name="allowRunningInParallel" value="false" />
+      <option name="listenPortForConnections" value="false" />
+      <option name="pid" />
+      <option name="selectedOptions">
+        <set />
+      </option>
+      <method v="2" />
+    </configuration>
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="10676">
+      <option name="allowRunningInParallel" value="false" />
+      <option name="listenPortForConnections" value="false" />
+      <option name="pid" value="10676" />
+      <option name="selectedOptions">
+        <set />
+      </option>
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="50d446de-656b-49de-bfab-b634bc188567" name="Default Changelist" comment="" />
+      <created>1714671688871</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1714671688871</updated>
+      <workItem from="1714671692702" duration="134000" />
+      <workItem from="1714672467802" duration="12124000" />
+    </task>
+    <servers />
+  </component>
+  <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
+  <component name="UnityUnitTestConfiguration" currentTestLauncher="EditMode" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="2012" y="92" width="1736" height="856" key="DiffContextDialog" timestamp="1714674987882">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="2012" y="92" width="1736" height="856" key="DiffContextDialog/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1714674987882" />
+    <state width="1877" height="375" key="GridCell.Tab.0.bottom" timestamp="1714674484800">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="375" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1714674484800" />
+    <state width="1877" height="375" key="GridCell.Tab.0.center" timestamp="1714674484800">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="375" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1714674484800" />
+    <state width="1877" height="375" key="GridCell.Tab.0.left" timestamp="1714674484800">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="375" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1714674484800" />
+    <state width="1877" height="375" key="GridCell.Tab.0.right" timestamp="1714674484800">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="375" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1714674484800" />
+    <state width="1877" height="375" key="GridCell.Tab.1.bottom" timestamp="1714674484801">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="375" key="GridCell.Tab.1.bottom/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1714674484801" />
+    <state width="1877" height="375" key="GridCell.Tab.1.center" timestamp="1714674484801">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="375" key="GridCell.Tab.1.center/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1714674484801" />
+    <state width="1877" height="375" key="GridCell.Tab.1.left" timestamp="1714674484801">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="375" key="GridCell.Tab.1.left/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1714674484801" />
+    <state width="1877" height="375" key="GridCell.Tab.1.right" timestamp="1714674484801">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="375" key="GridCell.Tab.1.right/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1714674484801" />
+    <state width="1877" height="375" key="GridCell.Tab.2.bottom" timestamp="1714674484801">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="375" key="GridCell.Tab.2.bottom/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1714674484801" />
+    <state width="1877" height="375" key="GridCell.Tab.2.center" timestamp="1714674484801">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="375" key="GridCell.Tab.2.center/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1714674484801" />
+    <state width="1877" height="375" key="GridCell.Tab.2.left" timestamp="1714674484801">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="375" key="GridCell.Tab.2.left/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1714674484801" />
+    <state width="1877" height="375" key="GridCell.Tab.2.right" timestamp="1714674484801">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="375" key="GridCell.Tab.2.right/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1714674484801" />
+    <state width="1877" height="375" key="GridCell.Tab.3.bottom" timestamp="1714674484801">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="375" key="GridCell.Tab.3.bottom/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1714674484801" />
+    <state width="1877" height="375" key="GridCell.Tab.3.center" timestamp="1714674484801">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="375" key="GridCell.Tab.3.center/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1714674484801" />
+    <state width="1877" height="375" key="GridCell.Tab.3.left" timestamp="1714674484801">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="375" key="GridCell.Tab.3.left/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1714674484801" />
+    <state width="1877" height="375" key="GridCell.Tab.3.right" timestamp="1714674484801">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="375" key="GridCell.Tab.3.right/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1714674484801" />
+    <state x="2714" y="236" key="RiderGenerateDialog" timestamp="1714677133582">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="2714" y="236" key="RiderGenerateDialog/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1714677133582" />
+    <state x="2796" y="211" key="SettingsEditor" timestamp="1714676010565">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="2796" y="211" key="SettingsEditor/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1714676010565" />
+    <state x="2727" y="433" key="VCS.ChangelistChooser" timestamp="1714674685896">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="2727" y="433" key="VCS.ChangelistChooser/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1714674685896" />
+    <state x="2012" y="92" width="1736" height="856" key="VCS.FileHistoryDialog" timestamp="1714677367893">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="2012" y="92" width="1736" height="856" key="VCS.FileHistoryDialog/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1714677367893" />
+  </component>
+</project>

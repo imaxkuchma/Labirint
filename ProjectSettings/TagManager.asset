@@ -6,6 +6,7 @@ TagManager:
   tags:
   - LeftJoystick
   - Enemy
+  - FinishPoint
   layers:
   - Default
   - TransparentFX

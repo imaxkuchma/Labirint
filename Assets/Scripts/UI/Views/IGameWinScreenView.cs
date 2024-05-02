@@ -1,7 +1,10 @@
 using System;
 
-public interface IGameWinScreenView : IView
+namespace UI.Views
 {
-    event Action OnReplayButtonClick;
+    public interface IGameWinScreenView : IView
+    {
+        event Action OnReplayButtonClick;
+    }
 }
 

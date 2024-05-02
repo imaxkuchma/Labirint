@@ -1,6 +1,9 @@
 
-public interface IView 
+namespace UI.Views
 {
-    void Show();
-    void Hide();
+    public interface IView 
+    {
+        void Show();
+        void Hide();
+    }
 }

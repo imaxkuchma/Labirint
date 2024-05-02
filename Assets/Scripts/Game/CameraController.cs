@@ -1,27 +1,30 @@
-using Cinemachine;
 using System.Collections;
 using System.Collections.Generic;
+using Cinemachine;
 using UnityEngine;
 
-public interface ICameraController
+namespace Game
 {
-    void SetFollowTarget(Transform target);
-}
-
-
-[RequireComponent(typeof(CinemachineVirtualCamera))]
-public class CameraController : MonoBehaviour, ICameraController
-{
-    private CinemachineVirtualCamera _virtualCamera;
-
-    private void Awake()
+    public interface ICameraController
     {
-        _virtualCamera = GetComponent<CinemachineVirtualCamera>();
+        void SetFollowTarget(Transform target);
     }
 
 
-    public void SetFollowTarget(Transform target)
+    [RequireComponent(typeof(CinemachineVirtualCamera))]
+    public class CameraController : MonoBehaviour, ICameraController
     {
-        _virtualCamera.Follow = target;
+        private CinemachineVirtualCamera _virtualCamera;
+
+        private void Awake()
+        {
+            _virtualCamera = GetComponent<CinemachineVirtualCamera>();
+        }
+
+
+        public void SetFollowTarget(Transform target)
+        {
+            _virtualCamera.Follow = target;
+        }
     }
 }

@@ -1,6 +1,8 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Game;
+using Inputs.Joystick;
 using UnityEngine;
 
 [RequireComponent(typeof(CharacterController))]
@@ -15,6 +17,7 @@ public class PlayerController : MonoBehaviour
     private float _stickMagnitude = 0;
     private bool _canMove;
     private IInputSystem _inputSystem;
+    private GameController _gameController;
 
     private void Awake()
     {
@@ -22,18 +25,13 @@ public class PlayerController : MonoBehaviour
         _cameraTransform = Camera.main.transform;
     }
 
-    private void Start()
+    public void Init(GameController gameController, IInputSystem inputSystem)
     {
-        //var gameScreen = UIManager.Instance.GetScreen<IGameScreenView>(ScreenType.GameScreen);
-        //SetInput(gameScreen.Joystick);
-    }
-
-
-    public void SetInput(IInputSystem inputSystem)
-    {
+        _gameController = gameController;
         _inputSystem = inputSystem;
         _inputSystem.OnStickMove += OnStickMove;
-        _inputSystem.OnStickDirection += OnStickDirection;     
+        
+        _inputSystem.OnStickDirection += OnStickDirection;
     }
 
     private void OnDisable()
@@ -51,8 +49,8 @@ public class PlayerController : MonoBehaviour
     {
         var forward = _cameraTransform.TransformDirection(Vector3.forward);
         forward.y = 0;
-        var _right = new Vector3(forward.z, 0.0f, -forward.x);
-        _moveDirection = forward * direction.y + _right * direction.x;
+        var right = new Vector3(forward.z, 0.0f, -forward.x);
+        _moveDirection = forward * direction.y + right * direction.x;
         _stickMagnitude = direction.magnitude;
         _velocity = _moveDirection * 20;
     }
@@ -70,7 +68,15 @@ public class PlayerController : MonoBehaviour
     {
         if (collision.gameObject.tag.Equals("Enemy"))
         {
-            Events.RaiseOnPlayerDamaged();
+            _gameController.PlayerCaught();
+        }
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if(other.gameObject.tag.Equals("FinishPoint"))
+        {
+            _gameController.PlayerHasFinished();
         }
     }
 }

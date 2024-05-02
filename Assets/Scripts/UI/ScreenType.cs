@@ -1,7 +1,10 @@
-﻿public enum ScreenType
+﻿namespace UI
 {
-    MenuScreen,
-    GameScreen,
-    GameWinScreen,
-    GameLostScreen
+    public enum ScreenType
+    {
+        MenuScreen,
+        GameScreen,
+        GameWinScreen,
+        GameLostScreen
+    }
 }

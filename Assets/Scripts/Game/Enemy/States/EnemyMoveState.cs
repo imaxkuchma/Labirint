@@ -1,4 +1,6 @@
 
+using Game.Enemy;
+
 public class EnemyMoveState: BaseState<IStateMachine<EnemyController>>
 {
     public EnemyMoveState(IStateMachine<EnemyController> stateMachine) : base(stateMachine)

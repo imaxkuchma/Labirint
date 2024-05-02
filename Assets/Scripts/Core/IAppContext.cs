@@ -1,4 +1,7 @@
-public interface IAppContext
+namespace Core
 {
-    T Resolve<T>();
+    public interface IAppContext
+    {
+        T Resolve<T>();
+    }
 }
