@@ -12,8 +12,8 @@ namespace Core
 
         private readonly IGameController _gameController;
 
-        private bool _firstRun = true;
-
+        private bool _firstPlay = true;
+        
         public PlayGameState(IGameStateMachine stateMachine, IAppContext appContext, IGameController gameController)
         {
             _stateMachine = stateMachine;
@@ -41,10 +41,10 @@ namespace Core
         public void Enter()
         {
             _gameScreen.Show();
-            if (_firstRun)
+            if (_firstPlay)
             {
                 _gameController.PlayGame();
-                _firstRun = false;
+                _firstPlay = false;
             }
         }
 

@@ -34,7 +34,6 @@ namespace Data
         public void Save()
         {
             var json = JsonConvert.SerializeObject(this);
-            Debug.Log(json);
             PlayerPrefs.SetString("LevelData", json);
         }
 

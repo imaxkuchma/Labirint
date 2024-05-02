@@ -11,6 +11,6 @@ namespace Game
         int AttemptCount { get; }
         Vector3[] GetEnemiesPositions();
         Vector3 GetPlayerPosition();
-        void PlayGame(bool loadData = false);
+        void PlayGame(bool loadData = false, bool isResume = false);
     }
 }

@@ -77,8 +77,10 @@ namespace Game
             }    
         }
 
-        public void PlayGame(bool loadGame = false)
-        {
+        public void PlayGame(bool loadGame = false, bool isResume = false)
+        { 
+            if(isResume) return;
+            
             if (_level != null)
             {
                 GameObject.Destroy(_level.gameObject);
@@ -98,16 +100,18 @@ namespace Game
             }
             
             _level = GameObject.Instantiate(_levelPrefab, new Vector3(0, 0, 0), Quaternion.identity);
+            
+            //Create player
             Vector3 playerSpawnPosition = _level.PlayerSpawnPoint.position + new Vector3(0, 0.5f, 0);
             if (loadGame)
             {
                 playerSpawnPosition = new Vector3(_levelData.PlayerPosition.x,_levelData.PlayerPosition.y,_levelData.PlayerPosition.z);
             }
-
             _player = GameObject.Instantiate(_playerPrefab, playerSpawnPosition , Quaternion.identity);
             _player.Init(this, _gameScreen.Joystick);
             _cameraController.SetFollowTarget(_player.transform);
             
+            //Create enemies
             _enemies = new EnemyController[_level.EnemiesSpawnPoints.Length];
             for (int i = 0; i < _level.EnemiesSpawnPoints.Length; i++)
             {
@@ -122,11 +126,11 @@ namespace Game
                 _enemies[i] = enemy;
             }
             
+            //Set level info
             var timeLeft = 0;
             if (loadGame)
             {
                 AttemptCount = _levelData.AttemptCount + 1;
-                
                 timeLeft = _levelData.TimeLeft;
 
                 if (timeLeft <= 0)
@@ -137,7 +141,6 @@ namespace Game
             else
             {
                 AttemptCount++;
-                
                 timeLeft = _levelTimeLeft;
             }
             
@@ -146,9 +149,9 @@ namespace Game
         
 #pragma warning disable 4014
             _timeCounter.BeginCount(timeLeft);
-#pragma warning restore 4014
+#pragma warning restore 4014 
         }
-    
+
         public void PlayerCaught()
         {
             OnPlayerLost?.Invoke();

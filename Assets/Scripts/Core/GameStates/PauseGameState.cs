@@ -31,7 +31,7 @@ namespace Core
         {  
             _stateMachine.SwitchState<PlayGameState>();
             _levelData.Load();
-            _gameController.PlayGame(true);
+            _gameController.PlayGame(loadData:true, isResume:false);
         }
 
         private void OnSaveButtonClick()
@@ -40,7 +40,10 @@ namespace Core
             _levelData.SetAttemptCount(_gameController.AttemptCount);
             _levelData.SetPlayerPosition(_gameController.GetPlayerPosition());
             _levelData.SetEmeniesPosition(_gameController.GetEnemiesPositions());
-            _levelData.Save();    
+            _levelData.Save(); 
+            
+            _stateMachine.SwitchState<PlayGameState>();
+            _gameController.PlayGame(loadData:false, isResume:true);
         }
 
         public void Enter()
